@@ -14,9 +14,7 @@ public class ChangeMoney {
         for(int i = 0; i < coinValues.length; i++){
             coinCount[i] = remainAmount / coinValues[i];
             remainAmount = remainAmount % coinValues[i];
-            if(remainAmount == 0){
-                continue;
-            }
+           6
         }
 
         System.out.println("Kết quả đổi tiền: ");
