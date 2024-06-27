@@ -11,17 +11,23 @@ public class ChangeMoney {
 
         int remainAmount = n;
 
-        for(int i = 0; i < coinValues.length; i++){
+        for (int i = 0; i < coinValues.length; i++) {
             coinCount[i] = remainAmount / coinValues[i];
             remainAmount = remainAmount % coinValues[i];
-           6
         }
 
         System.out.println("Kết quả đổi tiền: ");
-        for(int i =0 ; i <coinValues.length; i++){
-            if(coinCount[i] > 0){
+        for (int i = 0; i < coinValues.length; i++) {
+            if (coinCount[i] > 0) {
                 System.out.println("Đồng " + coinValues[i] + ": " + coinCount[i] + " đồng");
             }
         }
+
+        // Kiểm tra và in ra số tiền dư nếu có
+        if (remainAmount > 0) {
+            System.out.println("Số tiền còn dư: " + remainAmount + " đồng");
+        }
+
+        scanner.close();
     }
 }

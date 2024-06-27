@@ -43,6 +43,7 @@ public class GreedyKnapsack {
             }
         }
     }
+    
     public static void main(String[] args) {
         Item[] items = {
             new Item(5, 21),
